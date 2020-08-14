@@ -1,0 +1,69 @@
+
+// strip margin and padding
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: 'Roboto', sans-serif;
+	background: #272822;
+	color: white;
+}
+
+h1,
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h1 {
+	padding: 4rem 0 0.5rem;
+	font-size: 3.4rem;
+}
+
+h2 {
+	padding: 0 0 4rem;
+	font-size: 2rem;
+}
+
+
+footer {
+	padding: 8rem 0 1rem 1rem;
+}
+
+a {
+	color: white;
+	&:hover,
+	&:focus {
+		color: rgba(white, 0.6);
+	}
+}
+
+button {
+	width: 250px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	height: 40px;
+	color: white;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #ee972c;
+	border-radius: 20px;
+	margin: 5px;
+}

@@ -1,0 +1,96 @@
+// game-piece colours
+.empty {
+	background: none;
+}
+
+.game-piece.red {
+	background: darken(red,2);
+	border-color: darken(red,3);
+}
+
+.game-piece.green {
+	background: darken(green,2);
+	border-color: darken(green,3);
+}
+
+.game-piece.blue {
+	background: darken(blue,2);
+	border-color: darken(blue,3);
+}
+
+.game-piece.yellow {
+	background: darken(yellow,2);
+	border-color: darken(yellow,3);
+}
+
+.game-piece.orange {
+	background: darken(orange,2);
+	border-color: darken(orange,3);
+}
+
+.game-piece.purple {
+	background: darken(purple,2);
+	border-color: darken(purple,3);
+}
+
+
+// background colours
+.inactive {
+	background: rgb(182, 182, 182);
+}
+
+.win {
+	background: lighten(gold, 20);
+
+		&-row {
+			background: gold;
+		}
+}
+
+.lose {
+	background: darken(darkred, 10);
+}
+
+
+// game over message colours
+.game-over-win {
+	background: gold;
+}
+
+.game-over-lose {
+	background: darkred;
+}
+
+
+// score pips
+.score-pip.correctColour {
+background: darken(red, 4);
+border-color: darken(red, 2);
+}
+
+.score-pip.correctLocation {
+background: black;
+border-color: lighten(black, 10);
+}
+
+
+// buttons
+// submit
+button.submit {
+	background: #ea6414;
+
+	&:hover,
+	&:focus {
+		background: darken(#ea6414, 5);
+	}
+}
+
+// give up
+button.give-up {
+	background: #d6211b;
+
+	&:hover,
+	&:focus {
+		background: darken(#d6211b, 5);
+	}
+}

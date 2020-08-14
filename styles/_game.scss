@@ -1,0 +1,96 @@
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+// gameboard container
+div.game-container {
+	width: 275px;
+	height: 670px;
+}
+
+// the gameboard
+.game-board {
+	background: white;
+	border-radius: 15px;
+}
+
+
+// each row of the gameboard
+.row {
+	border-bottom: 1px solid grey;
+	display: flex;
+	align-items: center;
+
+	// round corners of top row
+	&-0 {
+		border-radius: 15px 15px 0 0;
+	}
+
+	// remove unneeded border on last row
+	&-11 {
+		border-bottom: none;
+	}
+}
+
+// game pieces
+.game-piece {
+	height: 30px;
+	width: 30px;
+	margin: 7px 10px;
+	border: 2px solid grey;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+// hover effect for empty pieces (in the active row)
+.row:not(.inactive) .game-piece.empty {
+	&:hover {
+		background: #F1F1F1;
+	}
+}
+
+// score-pip containers
+.score {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
+	// individual score pips
+	&-pip {
+		display: inline-block;
+		height: 12px;
+		width: 12px;
+		margin: 4px;
+		border: 2px solid grey;
+		border-radius: 50%;
+	}
+}
+
+// warning message
+.warning {
+	background-color: #d72f2f;
+	color: white;
+	text-align: center;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 250px;
+}
+
+// game over message
+.game-over {
+	text-align: center;
+	font-size: 30px;
+	border-radius: 10px;
+	width: 250px;
+	padding: 5px 20px;
+}

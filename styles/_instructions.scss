@@ -1,0 +1,83 @@
+// instructions
+.instructions {
+	width: 250px;
+	background: rgb(238, 238, 238);
+	border-radius: 15px;
+	color: #272822;
+	padding: 15px;
+
+	&-container {
+		width: 275px;
+		height: 420px;
+	}
+
+	h3 {
+		margin-bottom: 10px;
+	}
+
+	p {
+		margin-bottom: 6px;
+		font-size: 14px;
+
+		// good luck message
+		&.good-luck {
+			text-align: center;
+			font-size: 16px;
+			margin-bottom: 0;
+		}
+	}
+
+	div.colours {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+
+	div.score-pips p {
+		display: flex;
+	}
+
+	span.game-piece {
+		display: inline-block;
+		cursor: default;
+		margin: 7px 15px 10px;
+	}
+
+	span.score-pip {
+		flex-shrink: 0;
+		margin-right: 8px;
+		// display: inline-block;
+	}
+
+}
+
+.left-column {
+	display: flex;
+	flex-direction: column;
+}
+
+// give up button and container
+div.give-up {
+	width: 250px;
+	background: rgb(238, 238, 238);
+	border-radius: 15px;
+	color: #272822;
+	padding: 15px;
+	text-align: center;
+
+	&-container {
+		width: 275px;
+		height: 65px;
+	}
+}
+
+// solution
+.solution {
+	display: flex;
+	justify-content: center;
+
+	.game-piece {
+		cursor: default;
+	}
+}
